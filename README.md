@@ -80,23 +80,5 @@ The project includes separate, end-to-end integration tests to verify the core e
 
 ---
 
-## Deployment Guidelines
 
-### Backend (Render)
-1. In Render, select **Web Service**.
-2. Connect your GitHub repository.
-3. Configure the following parameters:
-   - **Root Directory**: `server`
-   - **Build Command**: `npm install`
-   - **Start Command**: `node src/server.js`
-4. In **Environment Variables**, define your MongoDB Atlas URI, JWT Secrets, and OpenAI API Key.
 
-### Frontend (Vercel)
-1. In Vercel, select **Import Project**.
-2. Choose your repository.
-3. Configure the following parameters:
-   - **Root Directory**: `client`
-   - **Build Command**: `npm run build`
-   - **Output Directory**: `dist`
-4. The client is pre-configured with a `client/vercel.json` file to support clean React client-side routing on page refreshes.
-"# CJI-trial-App" 
